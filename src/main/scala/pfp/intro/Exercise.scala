@@ -17,8 +17,10 @@ object Exercise {
   //    and return a function that takes one argument as a tuple
   // def tupled[A, B](???): ??? = ???
 
-  // 5. implement andThen method
+  // 5. implement andThen method 
 
+  /** Algebraic Data Type **/
+  // 1. Create ADT representing 
 
   /** Pattern matching & Scalaz types */
   // 1. write method extract that returns third element of the list or error if does not exist
