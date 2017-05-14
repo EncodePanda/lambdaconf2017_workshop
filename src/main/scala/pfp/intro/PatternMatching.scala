@@ -39,7 +39,7 @@ object PatternMatching {
   }
 
   /** Guards, guards! */
-  def check2(l: List[Int]) = l match {
+  def check2(l: List[Int]): String = l match {
     case ints if(ints.size > 3) => "wow, more then three!"
     case ints => "meh, could be better"
   }
