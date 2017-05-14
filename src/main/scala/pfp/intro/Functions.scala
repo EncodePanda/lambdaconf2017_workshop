@@ -1,5 +1,6 @@
 package pfp.intro
 
+import scala.language.higherKinds
 import scalaz._, Scalaz._
 
 object Functions {
@@ -64,7 +65,22 @@ object Functions {
   foo.func(10)
   foo.method(10)
 
-  // compose f with foo/method 
-  
-  // compose foo/method with f
+  /** do they compose */
+  ???
+
+  /** methods can be polymorphic */
+  def bar[A, B, C](a: A, b: B, make: (A, B) => C): C =
+    make(a, b)
+
+  bar[Int, Int, Int](10, 20, _ + _)
+  bar[String, Int, Double]("hello", 20, (s, i) => (s.length + i).toDouble)
+
+  def buz[F[_], A](f: F[A], tr: F[A] => A): A = tr(f)
+  val buzres: Int = buz[Option, Int](10.some, _.get)
+
+  def baz[A, B, C]: (A, B, (A, B) => C) => C =
+    (a: A, b: B, make: (A, B) => C) => make(a, b)
+
+  val bazres: (String, Double, (String, Double) => Long) => Long =
+    baz[String, Double, Long]
 }
