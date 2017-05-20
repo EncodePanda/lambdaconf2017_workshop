@@ -45,11 +45,11 @@ object PatternMatching {
   }
 
   /** decomposing arbitrary strutures */
-  trait Place
+  sealed trait Place
   case object Headquarters extends Place
   case object Battlefield extends Place
 
-  trait Soldier
+  sealed trait Soldier
   case class Robot(battery: Int) extends Soldier
   case class Human(life: Int) extends Soldier
 

@@ -10,7 +10,7 @@ object Functions {
   val func: String => Int = (s: String) => s.length
   val func_alt: String => Int = ???
 
-  val func2: (Int, Int) => Int = ???
+  val func2: (Int, Int) => Int = (i1: Int, i2: Int) => i1 + i2
   val func2_alt: (Int, Int) => Int = ??? 
 
   /** Using functions */
@@ -27,9 +27,9 @@ object Functions {
   val g = (x: Int) => x.toString
 
   // h(x) = g(f(x))
-  val h = g compose f
+  val h: Int => String = ???
 
-  val h_alt = f andThen g
+  val h_alt: Int => String = ???
 
   // operators from ScalaZ
   val hz = g <<< f
@@ -75,12 +75,8 @@ object Functions {
   bar[Int, Int, Int](10, 20, _ + _)
   bar[String, Int, Double]("hello", 20, (s, i) => (s.length + i).toDouble)
 
+  /** higher kinded types */
   def buz[F[_], A](f: F[A], tr: F[A] => A): A = tr(f)
-  val buzres: Int = buz[Option, Int](10.some, _.get)
-
-  def baz[A, B, C]: (A, B, (A, B) => C) => C =
-    (a: A, b: B, make: (A, B) => C) => make(a, b)
-
-  val bazres: (String, Double, (String, Double) => Long) => Long =
-    baz[String, Double, Long]
+  val buzres1: Int = buz[Option, Int](10.some, _.get)
+  val buzres2: String = buz[Option, String]("hello".some, _.get)
 }
