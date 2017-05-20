@@ -10,7 +10,6 @@ object Misc {
   case class Rectangle(width: Int, height: Int) extends Figure
   case class Cicrle(radius: Int) extends Figure
 
-
   sealed trait Expression
   case class Sum(exp1: Expression, exp2: Expression) extends Expression
   case class Multiply(exp1: Expression, exp2: Expression) extends Expression
@@ -22,7 +21,7 @@ object Misc {
     case a => Some(a.length)
   }
 
-  /** Either / Disjunction */
+  /** Either (Disjunction) */
   def calculateRisk2(input: String): String \/ Int = input match {
     case "blah" => "Wel... blah happend...".left
     case a => a.length.right
