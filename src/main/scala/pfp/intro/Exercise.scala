@@ -13,9 +13,11 @@ object Exercise {
   val foo = List("hello", "world", "!")
   val bar = ???
 
-  // 4. write a method that takes a function taking two arguments
-  //    and return a function that takes one argument as a tuple
-  // def tupled[A, B](???): ??? = ???
+  // 4. write a method tupled that
+  // - takes a function f as arguemnt
+  // - function f takes two parameters (a: A, b: B) and returns type C
+  // - method tupled should return a new function that takes tuple t: (A, B) as paramter and returns  value of type C
+  // def tupled[A, B, C](???): ??? = ???
 
   // 5. implement andThen method
   // usage example
