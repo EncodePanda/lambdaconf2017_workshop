@@ -1,7 +1,9 @@
 * Welcome
 ** About this workshop
-*** github repository: https://github.com/rabbitonweb/lambdaconf2017_workshop
+*** github repository
+**** https://github.com/rabbitonweb/lambdaconf2017_workshop
 *** also worth cloning: ScalaZ sources, Scala sources
+*** what is the purpose
 ** Do I need to know Scala?
 *** yes
 ** Sylabus
