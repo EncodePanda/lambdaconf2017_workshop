@@ -1,9 +1,4 @@
 * Welcome
-** About this workshop
-*** github repository
-**** https://github.com/rabbitonweb/lambdaconf2017_workshop
-*** also worth cloning: ScalaZ sources, Scala sources
-*** what is the purpose
 ** Do I need to know Scala?
 *** yes
 ** Sylabus
@@ -32,5 +27,11 @@
 **** abstraction is good for you!
 **** you don't need mocks
 **** what is the real difference between OOP vs FP
+** About this workshop
+*** github repository
+**** https://github.com/rabbitonweb/lambdaconf2017_workshop
+*** also worth cloning: ScalaZ sources
+**** https://github.com/scalaz/scalaz
+*** what is the purpose
 ** Who am I?
 ** Who are you?
