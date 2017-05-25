@@ -27,5 +27,10 @@
 *** MTL
 *** Free monad
 *** Writing appliction with FP paradigm
+*** BUT ALSO!
+**** FP is simple, you just follow types
+**** abstraction is good for you!
+**** you don't need mocks
+**** what is the real difference between OOP vs FP
 ** Who am I?
 ** Who are you?
