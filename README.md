@@ -7,3 +7,6 @@ This workshop is designed for all those interested in learning functional progra
 * Scala
 * SBT http://www.scala-sbt.org/download.html
 * GIT (to fetch this repository :) )
+
+
+Make sure that `sbt compile` works.
