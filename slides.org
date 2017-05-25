@@ -1,0 +1,29 @@
+* Welcome
+** About this workshop
+*** github repository: https://github.com/rabbitonweb/lambdaconf2017_workshop
+*** also worth cloning: ScalaZ sources, Scala sources
+** Do I need to know Scala?
+*** yes
+** Sylabus
+*** Function Composition
+*** Partial application
+*** Curring
+*** Pattern Matching
+*** Typeclasses
+*** Algebraic Data Type (ADT)
+*** Functor
+*** Apply 
+*** Applicative
+*** Bind
+*** Monad
+*** Traverse
+*** Foldable 
+*** Semigroup
+*** Monoid
+*** State monad
+*** Monad Transformers
+*** MTL
+*** Free monad
+*** Writing appliction with FP paradigm
+** Who am I?
+** Who are you?
