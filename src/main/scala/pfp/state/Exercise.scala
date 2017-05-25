@@ -27,9 +27,9 @@ object Exercise {
   def insert(user: User): State[S, Int] = ???
 
   // returns user from the store for given id
-  def findById(id: Int): State[S, User] = ???
+  def findById(id: Int): State[S, Option[User]] = ???
 
   // deletes user frrom the store
-  def delete(id: Int): State[S, User] = ???
+  def delete(id: Int): State[S, Unit] = ???
   
 }
